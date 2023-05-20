@@ -1,0 +1,3 @@
+kubectl create -f metadata_replicaset.yaml
+curl --header "Content-Type: application/json" --request POST --data '{"group":"mani","name":"city","value":"chn"}' 172.17.0.9:8080/metadata
+curl 172.17.0.9:8080/metadata
