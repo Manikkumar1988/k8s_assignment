@@ -1,0 +1,8 @@
+kubectl run metadata --image=luckyganesh/metadata-service:v1 --port=8080
+kubectl logs metadata
+kubectl get pod metadata -o custom-columns=NAME:metadata.name,IP:status.podIP
+minikube ssh
+curl 172.17.0.8:8080/metadata
+kubectl describe po metadata
+kubectl exec -it pod/metadata -- sh
+ps aux
