@@ -1,0 +1,3 @@
+kubectl expose po metadata --port=80 --target-port=8080 --type=NodePort --dry-run=client -o yaml > metadata_svc_nodeport
+minikube ip
+curl 192.168.59.102:32175/actuator/health
