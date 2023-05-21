@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  MONGODB_URI: mongodb://mongo/metadata
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: cm-metadata
