@@ -1,0 +1,4 @@
+kubectl create -f .
+curl --header "Content-Type: application/json" --request POST --data '{"group":"mani","name":"city","value":"chn"}' 192.168.59.102:32175/metadata
+kubectl delete po mongo-asdfads-asdf
+curl 192.168.59.102:32175/metadata | jq
