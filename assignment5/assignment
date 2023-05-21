@@ -1,0 +1,4 @@
+kubectl create deploy metadata --image=luckyganesh/metadata-service:v2 --dry-run=client -o yaml > metadata.yaml
+kubectl create deploy mongo --image=mongo --dry-run=client -o yaml > mongo_deploy.yaml
+kubectl expose deploy/mongo --port=27017
+kubectl apply -f .
