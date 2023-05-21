@@ -1,0 +1,4 @@
+kubectl create -f metadata_replicaset.yaml
+kubectl expose po mongo --port=80 --target-port=27017 --dry-run=client -o yaml > mongodb_svc_clusterip
+kubectl expose po mongo --port=27017 --target-port=27017 --dry-run=client -o yaml > mongodb_svc_clusterip
+
